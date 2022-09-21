@@ -3,22 +3,28 @@
 using namespace std;
 
 void moveatends(string str,int i,int length){
+
+	//base case
 	if(i >= length){
 		return;
 	}
-
-
 	char current = str[i];
+
+	//recursive case
 	if (current != 'x'){
 		cout << current;
 	}
 
+	//function call
 	moveatends(str,i+1,length);
 
+	//recursive case
 	if (current == 'x') {
 		cout << current;
 	}
 }
+
+
 int main() {
 	string str;
 	cin >> str;
