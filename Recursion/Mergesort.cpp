@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 
-//function to merge two sorted array
+//function to sort the array and merge the sorted array
 void merge(int a[],int b[],int c[],int s,int e) {
     int mid = (s+e)/2;
     int i = s;
